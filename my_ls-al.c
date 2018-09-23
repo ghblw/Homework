@@ -55,10 +55,10 @@ void inf(char *file) {
         p++;
     }
     printf(" ");
-    if(mod[0] == 'd') {
+    if(mod[0] == 'd' && mod[9] == 'x') {
         //蓝色加粗
         printf("\033[1;34m%s\033[0m\n",file);
-    } else if (mod[9] == 'x'){
+    } else if (mod[0] != 'd' && mod[9] == 'x'){
         //绿色加粗
         printf("\033[1;32m%s\033[0m\n",file);
     } else {
